@@ -31,7 +31,7 @@
 
   - name: check App directory exists or not
     ansible.builtin.stat:
-    path: /app
+      path: /app
     register: p
 
   - name: Print directory stats
