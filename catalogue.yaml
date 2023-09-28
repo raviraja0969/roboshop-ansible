@@ -1,0 +1,6 @@
+- name: install catalogue component
+  hosts: catalogue
+  become: yes
+  tasks:
+  - name: Setup NPM Source
+    ansible.builtin.script: curl -sL https://rpm.nodesource.com/setup_lts.x | bash
