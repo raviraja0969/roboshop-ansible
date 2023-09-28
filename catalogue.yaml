@@ -36,5 +36,9 @@
 
   - name: Print directory stats
     ansible.builtin.debug:
+      msg: "output : {{p.exists}}"
+
+  - name: Print directory stats
+    ansible.builtin.debug:
       msg: "file is not  present"
     when: p.exists == "false"
