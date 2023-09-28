@@ -9,6 +9,7 @@ cmnd=""
 ACTION="";
 for i in $@
 do
+    echo "Node is $i"
     if [ $i == "mysql" || $i == "mongodb" ]
     then
         INSTANCE_TYPE="t3.medium"
