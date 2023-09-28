@@ -38,7 +38,7 @@
     ansible.builtin.debug:
       msg: "output : {{p.stat.exists}}"
 
-  - name: Print directory stats
+  - name: Create directory
     ansible.builtin.file:
       path: /app
       state: directory
@@ -48,4 +48,9 @@
     ansible.builtin.get_url:
       url: https://roboshop-builds.s3.amazonaws.com/catalogue.zip
       dest: /tmp
+
+  - name: Extract catalogue artifact
+    ansible.builtin.unarchive:
+      src: /tmp/catalogue.zip
+      dest: /app
     
