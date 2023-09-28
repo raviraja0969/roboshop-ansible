@@ -43,3 +43,9 @@
       path: /app
       state: directory
     when: p.stat.exists == False
+
+  - name: Download catalogue artifact
+    ansible.builtin.get_url:
+      url: https://roboshop-builds.s3.amazonaws.com/catalogue.zip
+      dest: /tmp
+    
