@@ -36,7 +36,7 @@
 
   - name: Print directory stats
     ansible.builtin.debug:
-      msg: "output : {{p.exists}}"
+      msg: "output : {{p}}"
 
   - name: Print directory stats
     ansible.builtin.debug:
