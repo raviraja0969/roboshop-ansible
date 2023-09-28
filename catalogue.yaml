@@ -54,8 +54,16 @@
       src: /tmp/catalogue.zip
       dest: /app
       remote_src: yes
+
   - name: install dependencies
     ansible.builtin.command: npm install
     args:
       creates: /app
+  
+  - name: Copy file with owner and permissions
+    ansible.builtin.copy:
+      src: mongodb.repo
+      dest: /etc/systemd/system/catalogue.service
+
+  
     
