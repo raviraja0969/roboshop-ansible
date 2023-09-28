@@ -71,7 +71,7 @@
 
   - name: Install mongodb
     ansible.builtin.yum:
-      name: mongodb-org
+      name: mongodb-org-shell
       state: installed
 
   - name: install dependencies
