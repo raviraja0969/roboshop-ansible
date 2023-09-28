@@ -73,14 +73,14 @@
     ansible.builtin.copy:
       src: mongodb.repo
       dest: /etc/yum.repos.d/mongo.repo
-      
+
   - name: Install mongodb
     ansible.builtin.yum:
       name: mongodb-org-shell
       state: installed
 
   - name: install dependencies
-    ansible.builtin.command: mongo --host mongodb.ravistarfuture.online </app/schema/catalogue.js
+    ansible.builtin.command: mongo --host mongodb.ravistarfuture.online < /app/schema/catalogue.js
    
   - name: Restart catalogue
     ansible.builtin.service:
