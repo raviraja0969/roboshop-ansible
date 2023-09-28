@@ -22,12 +22,6 @@
     ansible.builtin.file:
       path: /usr/share/nginx/html/
       state: directory
-  
-  - name: Create directory
-    ansible.builtin.file:
-      path: /app
-      state: directory
-    when: p.stat.exists == False
 
   - name: Download web artifact
     ansible.builtin.get_url:
