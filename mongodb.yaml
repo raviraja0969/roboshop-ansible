@@ -10,3 +10,18 @@
     ansible.builtin.yum:
       name: mongodb-org
       state: installed
+  - name: Enable service mongodb, and start the service
+    ansible.builtin.service:
+      name: mongod
+      enabled: yes
+      state: started
+  - name: replace the text
+    ansible.builtin.replace:
+      path: /etc/mongod.conf
+      regexp: '127.0.0.1'
+      replace: '0.0.0.0'
+  - name: Restart Mongodb
+    ansible.builtin.service:
+      name: mongod
+      state: restarted
+    
