@@ -9,3 +9,6 @@ web.ravistarfuture.online
 
 [redis]
 redis.ravistarfuture.online
+
+[user]
+user.ravistarfuture.online
