@@ -15,3 +15,15 @@ user.ravistarfuture.online
 
 [cart]
 cart.ravistarfuture.online
+
+[mysql]
+mysql.joindevops.online
+
+[shipping]
+shipping.joindevops.online
+
+[rabbitmq]
+rabbitmq.joindevops.online
+
+[payment]
+payment.joindevops.online
