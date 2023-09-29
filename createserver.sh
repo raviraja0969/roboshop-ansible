@@ -41,3 +41,5 @@ do
                         }}]
     }'
 done
+
+#sh createserver.sh mongodb catalogue mongodb catalogue redis user cart mysql shipping rabbitmq payment web
