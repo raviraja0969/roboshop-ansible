@@ -17,10 +17,10 @@ user.ravistarfuture.online
 cart.ravistarfuture.online
 
 [mysql]
-mysql.joindevops.online
+mysql.ravistarfuture.online
 
 [shipping]
-shipping.joindevops.online
+shipping.ravistarfuture.online
 
 [rabbitmq]
 rabbitmq.joindevops.online
