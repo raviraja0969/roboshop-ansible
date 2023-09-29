@@ -12,3 +12,6 @@ redis.ravistarfuture.online
 
 [user]
 user.ravistarfuture.online
+
+[cart]
+cart.ravistarfuture.online
