@@ -23,7 +23,7 @@ mysql.ravistarfuture.online
 shipping.ravistarfuture.online
 
 [rabbitmq]
-rabbitmq.joindevops.online
+rabbitmq.ravistarfuture.online
 
 [payment]
-payment.joindevops.online
+payment.ravistarfuture.online
