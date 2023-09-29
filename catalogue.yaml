@@ -58,7 +58,7 @@
   - name: install dependencies
     ansible.builtin.command: npm install
     args:
-      creates: /app
+      chdir: /app
   
   - name: Copy file with owner and permissions
     ansible.builtin.copy:
@@ -66,7 +66,7 @@
       dest: /etc/systemd/system/catalogue.service
 
   - name: restart service cron on centos, in all cases, also issue daemon-reload to pick up config changes
-    ansible.builtin.systemd_service:
+    ansible.builtin.systemd:
       daemon_reload: true
 
   - name: Copy file with owner and permissions
