@@ -1,6 +1,11 @@
 [mongodb]
 mongodb.ravistarfuture.online
+
 [catalogue]
 catalogue.ravistarfuture.online
+
 [web]
 web.ravistarfuture.online
+
+[redis]
+redis.ravistarfuture.online
